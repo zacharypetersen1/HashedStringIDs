@@ -10,8 +10,8 @@ int main()
 	
 	// ... later on
 
-	// _hash UDL will cause "Player"_hash to resolve to type: hashResult_t at compile time
-	// Meaning that int-based comparisons can be made instead of string comparisons
+	// "Player"_hash will resolve to a literal of type hashResult_t at compile time
+	// meaning that int-based comparisons can be made instead of string comparisons
 	GameObject* pPlayer = GameObject::find("Player"_hash);
 
 	// If HASHEDSTR_GLOBAL_MAP is defined, you can retrieve original string from global map like this:
